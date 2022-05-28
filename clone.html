@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>자격증넷 클론 코딩</title>
+    <link href="css/default.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/swiper.min.css" rel="stylesheet">
+    <link href="css/eb4_basic/style-nr.css" rel="stylesheet">
+    <link href="css/eb4_basic/plugins/fontawesome5/css/fontawesome-all.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div id="hd" class="" style="z-index: 1000;">
+        <link href="css/header.css" rel="stylesheet">
+        <div id="hd" class="hd_sub">
+            <div class="hdsub_w">
+                <div id="tnb">
+                    <ul class="hd_login">
+                        <li>
+                            <div class="logo">
+                                <a href="/"><img src="./img/logo.png" alt="자격증넷" title=""></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="hd_sch_wr border-gradient main-search" id="hdSchWr" style="display: block;">
+                                <form name="fsearchbox" method="get" action="/search/search"
+                                    onsubmit="return fsearchbox_submit(this);">
+                                    <fieldset id="hd_sch">
+                                        <div class="search_tit">통합검색</div>
+                                        <input type="text" name="stx" id="sch_stx" maxlength="50"
+                                            placeholder="자격증 꿀팁 보러가기 #취준 #취뽀">
+                                        <button type="submit" id="sch_submit" value="검색">
+                                            <img src="img/mainSrchBtn.png" alt="검색">
+                                        </button>
+                                    </fieldset>
+                                </form>
+                            </div>
+
+                        </li>
+                        <ul class="login_wr">
+                            <li class="menu_icon7">
+                                <a href="/member/register.php"><span class="menu_icon"></span>회원가입</a>
+                            </li>
+                            <li class="menu_icon3">
+                                <a href="/member/login.php"><span class="menu_icon"></span>로그인</a>
+                            </li>
+                            <li class="menu_icon5">
+                                <a href="https://support.janet.co.kr" target="_blank"><span
+                                        class="menu_icon"></span><span class="m_back">기업서비스</span></a>
+                            </li>
+                        </ul>
+                    </ul>
+                </div>
+                <div id="hd_wrapper">
+                    <nav id="gnb">
+                        <div class="gnb_wrap">
+                            <ul id="gnb_1dul">
+                                <li>
+                                    <button type="button" class="gnb_menu_btn" title="전체메뉴">
+                                        <img src="img/gnb.png">
+                                    </button>
+                                </li>
+                                <li class="gnb_1dli"><a href="/jnTops/" class="gnb_1da">Top100</a></li>
+                                <li class="gnb_1dli"><a href="/jnLics/" class="gnb_1da">자격증정보</a></li>
+                                <li class="gnb_1dli"><a href="/jnLnPo/" class="gnb_1da">어학/공무원</a></li>
+                                <li class="gnb_1dli"><a href="/bbs/board.php?bo_table=bNews" class="gnb_1da">자넷info</a>
+                                </li>
+                                <li class="gnb_1dli"><a href="/jnTalk/index.php" class="gnb_1da">자넷톡</a></li>
+                                <ul class="float-r">
+                                    <li class="gnb_1dli"><a href="/jnTown/" class="gnb_1da">우리동네학원</a></li>
+                                    <li class="gnb_1dli"><a href="/jnComm/" class="gnb_1da">커뮤니티</a></li>
+                                    <li class="gnb_1dli"><a href="/jnRcmd/jnRcmd_test.php" class="gnb_1da">추천</a></li>
+                                </ul>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+
+            <div class="wrapper" style="margin-top: 0px;">
+                <div id="header-fixed" class="basic-layout fixed-main">
+                    <div class="basic-body">
+                        <link rel="stylesheet" href="css/main.css">
+                        <div class="wrapper" style="margin-top: 0px;">
+                            <div id="header-fixed" class="basic-layout">
+                                <div class="basic-body">
+                                    <div id="container_wr">
+                                        <section id="contentTop" class="colorBg">
+                                            <div class="inner">
+                                                <div class="imgBanner">
+                                                    <div
+                                                        class="swiper-container mainSwiper1 swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+                                                        <div class="swiper-wrapper" id="swiper-wrapper-a3e2d5d61b8cba35"
+                                                            aria-live="off"
+                                                            style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
+                                                            <div class="swiper-slide swiper-slide-duplicate swiper-slide-duplicate-active"
+                                                                style="background: url(img/mainBn_top_04.png); width: 420px;"
+                                                                data-swiper-slide-index="1" role="group"
+                                                                aria-label="2 / 2">
+                                                            </div>
+                                                            <div class="swiper-slide swiper-slide-duplicate-next"
+                                                                style="background: url(img/mainBn_top_01.png); width: 420px;"
+                                                                data-swiper-slide-index="0" role="group"
+                                                                aria-label="1 / 2">
+                                                            </div>
+                                                        </div>
+
+                                                        <div
+                                                            class="swiper-pagination main1-pg swiper-pagination-fraction swiper-pagination-horizontal">
+                                                            <span class="swiper-pagination-current">4</span> / <span
+                                                                class="swiper-pagination-total">4</span>
+                                                        </div>
+                                                        <span class="swiper-notification" aria-live="assertive"
+                                                            aria-atomic="true"></span>
+                                                    </div>
+                                                </div>
+                                                <div class="mainInfo">
+                                                    <div
+                                                        class="swiper-container mainSwiper2 swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+                                                        <div class="swiper-wrapper" id="swiper-wrapper-93844d61b02695e3"
+                                                            aria-live="polite"
+                                                            style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+                                                            <div class="swiper-slide swiper-slide-duplicate-active"
+                                                                data-swiper-slide-index="0" role="group"
+                                                                aria-label="1 / 2" style="width: 490px;">
+                                                                <h1 class="tit">자격증정보</h1>
+                                                                <ul class="Info">
+                                                                    <li>
+                                                                        <a href="/jnLics/">
+                                                                            <span class="thum"><img
+                                                                                    src="./img/main/inCrfc.png"></span>
+                                                                            <div class="txt_box">
+                                                                                <h3>자격증정보</h3>
+                                                                                <p>자격증정보의 모든 것</p>
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="/jnLics/licensebyIntlCategory.php">
+                                                                            <span class="thum"><img
+                                                                                    src="./img/main/iCrtfc.png"></span>
+                                                                            <div class="txt_box">
+                                                                                <h3>계열별정보</h3>
+                                                                                <p>자격증에 대하여 알려드립니다.</p>
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="/jnLics/licenseSchedule.php">
+                                                                            <span class="thum"><img
+                                                                                    src="./img/main/sCrtfc.png"></span>
+                                                                            <div class="txt_box">
+                                                                                <h3>자격증 공모전</h3>
+                                                                                <p>자격증 관련 공모전 정보 확인하기</p>
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                    <li>
+                                                                        <a href="/jnLics/licenseTestGuide.php">
+                                                                            <span class="thum"><img
+                                                                                    src="./img/main/rCrtfc.png"></span>
+                                                                            <div class="txt_box">
+                                                                                <h3>시험접수안내</h3>
+                                                                                <p>필기/실기 기본접수안내</p>
+                                                                            </div>
+                                                                        </a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="swiper-button-next main2-next coner-arrow" 
+                                                            tabindex="0" role="button" aria-label="Next slide"
+                                                            aria-controls="swiper-wrapper-93844d61b02695e3"><i
+                                                                class="fa fa-chevron-right"></i></div>
+                                                        <div class="swiper-button-prev main2-prev coner-arrow"
+                                                            tabindex="0" role="button" aria-label="Previous slide"
+                                                            aria-controls="swiper-wrapper-93844d61b02695e3"><i
+                                                                class="fa fa-chevron-left"></i></div>
+                                                        <span class="swiper-notification" aria-live="assertive"
+                                                            aria-atomic="true"></span>
+                                                    </div>
+                                                    <div class="mainInfoAdv">
+                                                        <div class="eb-slider-basic-wrap-1626084353"
+                                                            style="display: inline-block;">
+                                                            <div class="eb-slider-basic-in" style="display: block;">
+                                                                <div
+                                                                    class="eb-slider-basic slick-initialized slick-slider">
+                                                                    <div class="slick-list draggable">
+                                                                        <div class="slick-track"
+                                                                            style="opacity: 1; width: 430px; transform: translate3d(0px, 0px, 0px);">
+                                                                            <div class="slick-slide slick-current slick-active"
+                                                                                data-slick-index="0" aria-hidden="false"
+                                                                                style="width: 430px;">
+                                                                                <div>
+                                                                                    <div class="eb-slider-basic-item"
+                                                                                        style="width: 100%; display: inline-block;">
+                                                                                        <a href="javascript:"
+                                                                                            tabindex="0">
+                                                                                            <img src="https://janet.co.kr/data/ebslider/eb4_basic/img/d0942d969f0a37cb73a46db345ea874b.png"
+                                                                                                class="img-responsive"
+                                                                                                alt="" title="">
+                                                                                        </a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="mainChart">
+                                                    <div
+                                                        class="swiper-container mainSwiper3 swiper-initialized swiper-horizontal swiper-pointer-events swiper-backface-hidden">
+                                                        <div class="swiper-wrapper"
+                                                            id="swiper-wrapper-2946103998cab6952" aria-live="polite"
+                                                            style="transition-duration: 0ms; transform: translate3d(0px, 0px, 0px);">
+                                                            <div class="swiper-slide swiper-slide-active"
+                                                                data-swiper-slide-index="2" role="group"
+                                                                aria-label="2 / 2" style="width: 200px;">
+                                                                <h1 class="tit">기사 인기순위</h1>
+                                                                <ul class="chart_content">
+                                                                    <li class="hot_item">
+                                                                        <a href="/jnLics/licenseInfo.php?ld_id=91"><span
+                                                                                class="item">전기기사</span></a>
+                                                                    </li>
+                                                                    <li class="hot_item">
+                                                                        <a href="/jnLics/licenseInfo.php?ld_id=96"><span
+                                                                                class="item">산업안전기사</span></a>
+                                                                    </li>
+                                                                    <li class="hot_item">
+                                                                        <a href="/jnLics/licenseInfo.php?ld_id=102"><span
+                                                                                class="item">위험물산업기사</span></a>
+                                                                    </li>
+                                                                    <li class="hot_item">
+                                                                        <a
+                                                                            href="/jnLics/licenseInfo.php?ld_id=1634888682"><span
+                                                                                class="item">전기산업기사</span></a>
+                                                                    </li>
+                                                                    <li class="hot_item">
+                                                                        <a href="/jnLics/licenseInfo.php?ld_id=105"><span
+                                                                                class="item">건축기사</span></a>
+                                                                    </li>
+                                                                    <li class="hot_item">
+                                                                        <a href="/jnLics/licenseInfo.php?ld_id=116"><span
+                                                                                class="item">건설안전기사</span></a>
+                                                                    </li>
+                                                                    <li class="hot_item">
+                                                                        <a href="/jnLics/licenseInfo.php?ld_id=99"><span
+                                                                                class="item">소방설비기사(전기분야)</span></a>
+                                                                    </li>
+                                                                    <li class="hot_item">
+                                                                        <a
+                                                                            href="/jnLics/licenseInfo.php?ld_id=1627465985"><span
+                                                                                class="item">제품디자인산업기사</span></a>
+                                                                    </li>
+                                                                    <li class="hot_item">
+                                                                        <a
+                                                                            href="/jnLics/licenseInfo.php?ld_id=1635215363"><span
+                                                                                class="item">건설기계정비산업기사</span></a>
+                                                                    </li>
+                                                                    <li class="hot_item">
+                                                                        <a
+                                                                            href="/jnLics/licenseInfo.php?ld_id=1627369219"><span
+                                                                                class="item">사출금형산업기사</span></a>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                        <div class="swiper-button-next main3-next coner-arrow"
+                                                            tabindex="0" role="button" aria-label="Next slide"
+                                                            aria-controls="swiper-wrapper-2946103998cab6952"><i
+                                                                class="fa fa-chevron-right"></i></div>
+                                                        <div class="swiper-button-prev main3-prev coner-arrow"
+                                                            tabindex="0" role="button" aria-label="Previous slide"
+                                                            aria-controls="swiper-wrapper-2946103998cab6952"><i
+                                                                class="fa fa-chevron-left"></i></div>
+                                                        <span class="swiper-notification" aria-live="assertive"
+                                                            aria-atomic="true"></span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+                                        <section id="topAdv_Bn" class="inner">
+                                            <div
+                                                class="swiper-container topAdv_Swiper swiper-initialized swiper-horizontal swiper-pointer-events">
+                                                <div class="swiper-wrapper" id="swiper-wrapper-fb3f102b91b91caf1"
+                                                    aria-live="polite"
+                                                    style="transform: translate3d(0px, 0px, 0px); transition-duration: 0ms;">
+                                                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="0" role="group" aria-label="1 / 6" style="margin-right: 20px;">
+                                                        <a href=""><img src="img/main/MainBn_scroll_01.png" alt="한 달만에 취득 가능한 자격증 BEST"></a>
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="1" role="group" aria-label="2 / 6" style="margin-right: 20px;">
+                                                        <a href=""><img src="img/main/MainBn_scroll_02.png" alt="자격증 따기전에 알아둬야 할 것, 내게 꼭 필요한 자격증따기"></a>
+                                                    </div>
+                                                    <div class="swiper-slide swiper-slide-duplicate" data-swiper-slide-index="2" role="group" aria-label="3 / 6" style="margin-right: 20px;">
+                                                        <a href=""><img src="img/main/MainBn_scroll_03.png" alt="가장 따기 쉬운 자격증"></a>
+                                                    </div>
+                                                </div>
+                                                <span class="swiper-notification" aria-live="assertive"
+                                                    aria-atomic="true"></span>
+                                            </div>
+                                            <div class="swiper-button-next topAdv-next swiper-button-black" tabindex="0"
+                                                role="button" aria-label="Next slide"
+                                                aria-controls="swiper-wrapper-fb3f102b91b91caf1"></div>
+                                            <div class="swiper-button-prev topAdv-prev swiper-button-black" tabindex="0"
+                                                role="button" aria-label="Previous slide"
+                                                aria-controls="swiper-wrapper-fb3f102b91b91caf1"></div>
+                                        </section>
+                                        <section id="hotKeyword" class="inner">
+                                            <h1 class="tit">
+                                                <b><span class="purple">HOT</span>키워드</b> TOP20
+                                            </h1>
+                                            <ul class="listHot">
+                                                <li>
+                                                    <a href="/jnLics/licenseInfo.php?ld_id=155">
+                                                        <div class="imgBox">
+                                                            <img src="https://janet.co.kr/data/licenseitem/155/hotKeyword_02.jpg"
+                                                                title="" alt="">
+                                                            <h3 class="name">토익(TOEIC)</h3>
+                                                            <h5 class="d_day">D-1</h5>
+                                                        </div>
+                                                        <div class="subTxt">
+                                                            <p>시행기관 : 미국 ETS</p>
+                                                            <span class="date"> 시험일 : 2022-05-29 </span>
+                                                        </div>
+                                                        <div class="overTxt">
+                                                            <p><strong>유형:</strong> 제462회</p>
+                                                            <p><strong>접수기간:</strong> 2022-04-11 ~ 16</p>
+                                                            <span class="tag"></span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/jnLics/licenseInfo.php?ld_id=155">
+                                                        <div class="imgBox">
+                                                            <img src="https://janet.co.kr/data/licenseitem/155/hotKeyword_02.jpg"
+                                                                title="" alt="">
+                                                            <h3 class="name">토익(TOEIC)</h3>
+                                                            <h5 class="d_day">D-1</h5>
+                                                        </div>
+                                                        <div class="subTxt">
+                                                            <p>시행기관 : 미국 ETS</p>
+                                                            <span class="date"> 시험일 : 2022-05-29 </span>
+                                                        </div>
+                                                        <div class="overTxt">
+                                                            <p><strong>유형:</strong> 제462회</p>
+                                                            <p><strong>접수기간:</strong> 2022-04-11 ~ 16</p>
+                                                            <span class="tag"></span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/jnLics/licenseInfo.php?ld_id=155">
+                                                        <div class="imgBox">
+                                                            <img src="https://janet.co.kr/data/licenseitem/155/hotKeyword_02.jpg"
+                                                                title="" alt="">
+                                                            <h3 class="name">토익(TOEIC)</h3>
+                                                            <h5 class="d_day">D-1</h5>
+                                                        </div>
+                                                        <div class="subTxt">
+                                                            <p>시행기관 : 미국 ETS</p>
+                                                            <span class="date"> 시험일 : 2022-05-29 </span>
+                                                        </div>
+                                                        <div class="overTxt">
+                                                            <p><strong>유형:</strong> 제462회</p>
+                                                            <p><strong>접수기간:</strong> 2022-04-11 ~ 16</p>
+                                                            <span class="tag"></span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/jnLics/licenseInfo.php?ld_id=155">
+                                                        <div class="imgBox">
+                                                            <img src="https://janet.co.kr/data/licenseitem/155/hotKeyword_02.jpg"
+                                                                title="" alt="">
+                                                            <h3 class="name">토익(TOEIC)</h3>
+                                                            <h5 class="d_day">D-1</h5>
+                                                        </div>
+                                                        <div class="subTxt">
+                                                            <p>시행기관 : 미국 ETS</p>
+                                                            <span class="date"> 시험일 : 2022-05-29 </span>
+                                                        </div>
+                                                        <div class="overTxt">
+                                                            <p><strong>유형:</strong> 제462회</p>
+                                                            <p><strong>접수기간:</strong> 2022-04-11 ~ 16</p>
+                                                            <span class="tag"></span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="/jnLics/licenseInfo.php?ld_id=155">
+                                                        <div class="imgBox">
+                                                            <img src="https://janet.co.kr/data/licenseitem/155/hotKeyword_02.jpg"
+                                                                title="" alt="">
+                                                            <h3 class="name">토익(TOEIC)</h3>
+                                                            <h5 class="d_day">D-1</h5>
+                                                        </div>
+                                                        <div class="subTxt">
+                                                            <p>시행기관 : 미국 ETS</p>
+                                                            <span class="date"> 시험일 : 2022-05-29 </span>
+                                                        </div>
+                                                        <div class="overTxt">
+                                                            <p><strong>유형:</strong> 제462회</p>
+                                                            <p><strong>접수기간:</strong> 2022-04-11 ~ 16</p>
+                                                            <span class="tag"></span>
+                                                        </div>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                            
+                                        </section>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+</body>
+
+</html>
