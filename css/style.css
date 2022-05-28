@@ -1142,7 +1142,7 @@
   }
   /*.listHot li:nth-child(n+17) a:hover {top:-206px}*/
   .listHot li a:hover:after {
-    content: url(../img/common/plusB_con.png);
+    content: url(../img/plusB_con.png);
     background: #bc8ff0;
     position: absolute;
     right: 0;
@@ -1574,7 +1574,7 @@
     z-index: 2;
   }
   .listBanner li:hover a:after {
-    content: url(../img/common/plus_con.png);
+    content: url(../img/plusB_con.png);
     background: #bc8ff0;
     position: absolute;
     right: 0;
